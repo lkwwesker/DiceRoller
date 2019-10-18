@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener { rollDice() }
         val countButton: Button= this.findViewById(R.id.count_button)
         countButton.setOnClickListener{countDice()}
+        val resetButton: Button = this.findViewById(R.id.reset_button)
+        resetButton.setOnClickListener{resetDice()}
     }
 
     private fun rollDice() {
@@ -70,5 +72,14 @@ class MainActivity : AppCompatActivity() {
             resultText2.text = "6"
 
 
+    }
+    private fun resetDice(){
+        Toast.makeText(this,"button clicked",Toast.LENGTH_SHORT).show()
+        val resultText: TextView = findViewById(R.id.result_text)
+        val resultText1: TextView = findViewById(R.id.result_text1)
+        val resultText2: TextView = findViewById(R.id.result_text2)
+        resultText.text = "0"
+        resultText1.text = "0"
+        resultText2.text = "0"
     }
 }
