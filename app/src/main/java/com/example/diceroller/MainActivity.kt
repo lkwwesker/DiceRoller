@@ -48,24 +48,24 @@ class MainActivity : AppCompatActivity() {
         var d2 = rt1.toInt()
         var d3 = rt2.toInt()
 
-        val randomInt = Random().nextInt(6)+ 1
-        d1 += randomInt
+
+        d1++
         if(d1<=6)
         resultText.text = d1.toString()
         else
             resultText.text = "6"
 
-        val randomInt1 = Random().nextInt(6)+ 1
-        d2 += randomInt1
+
+        d2++
         if(d2<=6)
-            resultText1.text = d1.toString()
+            resultText1.text = d2.toString()
         else
             resultText1.text = "6"
 
-        val randomInt2 = Random().nextInt(6)+ 1
-        d3 += randomInt2
+
+        d3 ++
         if(d3<=6)
-            resultText2.text = d1.toString()
+            resultText2.text = d3.toString()
         else
             resultText2.text = "6"
 
